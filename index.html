@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Habit Categories</h2>
+      <ul>
+        <li>Health</li>
+        <li>Study</li>
+        <li>Fitness</li>
+        <li>Mindfulness</li>
+        <li>Custom</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>Daily Habit Tracker</h1>
+
+      <form id="habit-form">
+        <input type="text" id="habit-input" placeholder="Add a habit..." required />
+        <select id="category-select" required>
+          <option value="">Select Category</option>
+          <option value="Health">Health</option>
+          <option value="Study">Study</option>
+          <option value="Fitness">Fitness</option>
+          <option value="Mindfulness">Mindfulness</option>
+          <option value="Custom">Custom</option>
+        </select>
+        <button type="submit">Add</button>
+      </form>
+
+      <div id="habits-container">
+        <section id="Health">
+          <h2>Health</h2>
+          <ul class="habit-list"></ul>
+        </section>
+        <section id="Study">
+          <h2>Study</h2>
+          <ul class="habit-list"></ul>
+        </section>
+        <section id="Fitness">
+          <h2>Fitness</h2>
+          <ul class="habit-list"></ul>
+        </section>
+        <section id="Mindfulness">
+          <h2>Mindfulness</h2>
+          <ul class="habit-list"></ul>
+        </section>
+        <section id="Custom">
+          <h2>Custom</h2>
+          <ul class="habit-list"></ul>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Kammari Vijaya Tejaswini. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
